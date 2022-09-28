@@ -23,13 +23,13 @@ var countMatches = function(items, ruleKey, ruleValue) {
             break;
     }
     
-    let count = 0;
+    let matchingItemCount = 0;
     
     for (let i = 0; i < items.length; i++) {
         if (items[i][ruleKeyIndex] === ruleValue) {
-            count++;
+            matchingItemCount++;
         }
     }
     
-    return count;
+    return matchingItemCount;
 };
