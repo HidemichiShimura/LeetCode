@@ -8,13 +8,13 @@
 */
 
  var checkIfPangram = function(sentence) {
-    const alphabetTable = {};
+    const alphabetMap = new Map();
     
     for (let i = 0; i < sentence.length; i++) {
-        if(alphabetTable[sentence[i]] === undefined) {
-            alphabetTable[sentence[i]] = 1;
+        if(alphabetMap[sentence[i]] === undefined) {
+            alphabetMap[sentence[i]] = 1;
         }
     }
     
-    return Object.keys(alphabetTable).length === 26 ? true : false; 
+    return Object.keys(alphabetMap).length === 26 ? true : false; 
 };
