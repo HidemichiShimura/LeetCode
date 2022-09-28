@@ -16,5 +16,5 @@
         }
     }
     
-    return Object.keys(alphabetMap).length === 26 ? true : false; 
+    return Object.keys(alphabetMap).length === 26; 
 };
