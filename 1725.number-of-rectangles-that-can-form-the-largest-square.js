@@ -21,9 +21,7 @@ var countGoodRectangles = function(rectangles) {
 
         squares.push(currLen);
         
-        if (maxLen < currLen) {
-            maxLen = currLen;
-        }
+        maxLen = Math.max(maxLen, currLen);
     }
     
     let numOfLargestRectangles = 0;
