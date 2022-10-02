@@ -9,11 +9,7 @@
 */
 
 var anagramMappings = function(nums1, nums2) {
-    const indexMappingArray = [];
-    
-    for (let i = 0; i < nums1.length; i++) {
-        indexMappingArray.push(nums2.indexOf(nums1[i]));
-    }
-    
-    return indexMappingArray;
+    return nums1.map(num => {
+        return nums2.indexOf(num);
+    })
 };
