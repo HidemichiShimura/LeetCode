@@ -8,13 +8,10 @@
  */
 
 var checkPerfectNumber = function(num) {
-    if (num === 1) {
-        return false;
-    }
+ 
+    let divisorSum = 0;
     
-    let divisorSum = 1;
-    
-    for (let i = 2; i < num; i++) {
+    for (let i = 1; i < num; i++) {
         if (num % i === 0) {
             divisorSum += i;
         }
