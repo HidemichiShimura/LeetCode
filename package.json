@@ -1,0 +1,22 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "source code files of LeetCode problems and testing files",
+  "main": "1. Two Sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HidemichiShimura/LeetCode.git"
+  },
+  "author": "Hidemichi Shimura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HidemichiShimura/LeetCode/issues"
+  },
+  "homepage": "https://github.com/HidemichiShimura/LeetCode#readme",
+  "dependencies": {
+    "jest": "^29.2.0"
+  }
+}
