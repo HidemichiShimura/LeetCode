@@ -7,15 +7,13 @@
     https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/
 */
 
- var mostWordsFound = function(sentences) {
+var mostWordsFound = function(sentences) {
     let maxLength = 0;
     
     for (let i = 0; i < sentences.length; i++) {
-        let wordArr = sentences[i].split(" ");
+        const wordArr = sentences[i].split(" ");
         
-        if (maxLength < wordArr.length) {
-            maxLength = wordArr.length;
-        }
+        maxLength = Math.max(maxLength, wordArr.length);
     }
     
     return maxLength;
