@@ -9,15 +9,15 @@
 */
 
 var numJewelsInStones = function(jewels, stones) {
-    let count = 0;
+    let jewelInStoneCount = 0;
     
     for (let i = 0; i < stones.length; i++) {
         for (let j = 0; j < jewels.length; j++) {
             if (stones[i] === jewels[j]) {
-                count++;
+                jewelInStoneCount++;
+                break;
             }    
         }
     }
-    
-    return count;
+    return jewelInStoneCount;
 };
