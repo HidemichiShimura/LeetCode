@@ -8,20 +8,20 @@
 */
 
 var finalValueAfterOperations = function(operations) {
-    let X = 0;
+    let finalValueOfX = 0;
     
     for (let i = 0; i < operations.length; i++) {
         switch (operations[i]) {
             case "--X":
             case "X--":
-                X -= 1
+                finalValueOfX -= 1
                 break;
             case "++X":
             case "X++":
-                X += 1;
+                finalValueOfX += 1;
                 break;
         }
     }
     
-    return X;
+    return finalValueOfX;
 };
