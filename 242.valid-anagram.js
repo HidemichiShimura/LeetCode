@@ -12,15 +12,5 @@ var isAnagram = function(s, t) {
     const sArr = [...s].sort();
     const tArr = [...t].sort();
     
-    if (sArr.length !== tArr.length) {
-        return false;
-    }
-    
-    for (let i = 0; i < sArr.length; i++) {
-        if (sArr[i] !== tArr[i]) {
-            return false;
-        }
-    }
-    
-    return true;
+    return sArr.join("") === tArr.join("");
 };
