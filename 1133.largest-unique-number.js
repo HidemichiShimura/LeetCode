@@ -22,3 +22,5 @@ var largestUniqueNumber = function(nums) {
     
     return Math.max(...occurOnceNums) === -Infinity ? -1 : Math.max(...occurOnceNums);
 }
+
+module.exports = largestUniqueNumber;
