@@ -14,3 +14,5 @@ var checkString = function(s) {
     }
     return !rightSideOfFirstB.includes('a')
 };
+
+module.exports = checkString;
