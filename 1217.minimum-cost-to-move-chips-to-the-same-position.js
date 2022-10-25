@@ -11,3 +11,5 @@ var minCostToMoveChips = function(position) {
     
     return Math.min(chipsAtOddIndices.length, chipsAtEvenIndices.length);
 };
+
+module.exports = minCostToMoveChips;
