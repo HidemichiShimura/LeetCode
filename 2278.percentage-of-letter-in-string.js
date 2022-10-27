@@ -11,3 +11,5 @@ var percentageLetter = function(s, letter) {
     
     return Math.floor((letterCount / s.length) * 100);
 };
+
+module.exports = percentageLetter;
