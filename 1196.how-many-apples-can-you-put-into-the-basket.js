@@ -19,3 +19,5 @@ var maxNumberOfApples = function(weight) {
     
     return sortedWeight.length;
 };
+
+module.exports = maxNumberOfApples;
