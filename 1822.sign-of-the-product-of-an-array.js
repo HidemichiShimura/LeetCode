@@ -14,3 +14,8 @@ var arraySign = function(nums) {
 function signFunc(x) {
     return x > 0 ? 1 : x < 0 ? -1 : 0;
 }
+
+module.exports = {
+    arraySign: arraySign,
+    signFunc: signFunc
+};
