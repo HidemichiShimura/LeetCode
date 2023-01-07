@@ -6,11 +6,14 @@
  */
 
 var findMaxK = function(nums) {
+    // Sort the input nums in a descending order
     const Sorted = [...nums].sort((a, b) => b - a);
 
     for (let i = 0; i < Sorted.length; i++) {
-        if (Sorted.includes(-1 * Sorted[i])) {
-            return Sorted[i];
+        const Num = Sorted[i];
+
+        if (Sorted.includes(Num * -1)) {
+            return Num;
         }
     }
     return -1;
