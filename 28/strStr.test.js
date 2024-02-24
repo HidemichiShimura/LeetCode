@@ -1,4 +1,4 @@
-const strStr = require("./28.find-the-index-of-the-first-occurrence-in-a-string");
+const strStr = require("./strStr");
 
 test("Return the first index of needle in haystack", () => {
   expect(strStr("sadbutsad", "sad")).toBe(0);
